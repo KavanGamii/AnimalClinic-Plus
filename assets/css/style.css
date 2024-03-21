@@ -1,0 +1,481 @@
+:root {
+    --nav-bar: #eaae00;
+    --yellow: #ffc500;
+    --black: #303130;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
+        url('../fonts/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Medium.woff2') format('woff2'),
+        url('../fonts/Poppins-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Black.woff2') format('woff2'),
+        url('../fonts/Poppins-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Poppins-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Bold.woff2') format('woff2'),
+        url('../fonts/Poppins-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Light.woff2') format('woff2'),
+        url('../fonts/Poppins-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+        url('../fonts/Poppins-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Thin.woff2') format('woff2'),
+        url('../fonts/Poppins-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+
+}
+
+img {
+    max-width: 100%;
+    transition: 0.7s;
+}
+
+p {
+    margin: 0px;
+}
+
+img:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.max-padding {
+    padding: 60px 0px;
+}
+
+.mid-padding {
+    padding: 30px 0px;
+}
+
+.min-padding {
+    padding: 15px 10px;
+}
+
+.hero-btn {
+    padding: 10px 15px;
+    background: #00c0cb;
+    color: white;
+    border: #00c0cb;
+    margin-right: 20px;
+    border-radius: 6px;
+    transition: 0.7s;
+}
+
+.hero-btn:hover {
+    transition: 0.7s;
+    background: white;
+    border: 1px solid;
+    color: black;
+}
+
+.ser-btn {
+    background: var(--yellow);
+    border: 2px solid;
+    transition: 0.7s;
+}
+
+.ser-btn:hover {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+/* Navbar Start */
+header {
+    background-color: var(--nav-bar);
+    padding: 6px 0px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.nav-link {
+    color: white;
+    font-size: 29px;
+    margin: 0px 18px;
+    transition: 0.7s;
+}
+
+.nav-link:hover {
+    color: #00c0cb;
+    font-weight: 500;
+    text-decoration: underline;
+
+}
+
+.navbar-nav .nav-link.active {
+    color: white;
+    text-decoration: underline;
+    font-size: 29px;
+}
+
+.form-control {
+    font-size: 18px;
+    height: 50px;
+    background: var(--yellow);
+    border: var(--yellow);
+    transition: 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.input-group-text {
+    padding: 0px 26px;
+    font-size: 22px;
+    font-weight: 100;
+    background: #00c0cb;
+    border: #00c0cb;
+    transition: 0.7s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Hero-Section */
+.hero-section {
+    background-color: var(--yellow);
+}
+
+.icons {
+    display: flex;
+    gap: 8px;
+    justify-content: end;
+}
+
+.hero-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero-inner h1 {
+    font-size: 50px;
+    font-weight: bold;
+    padding-top: 84px;
+}
+
+.hero-inner p {
+    font-size: 25px;
+    font-weight: 200;
+
+}
+
+/* Animal- lover Start */
+.animal-lover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ani-lover {
+    width: 90%;
+}
+
+.ani-lovers {
+    width: 90%;
+}
+
+.ani-lover h1 {
+    font-size: 44px;
+    font-weight: 600;
+}
+
+.ani-lover p {
+    font-size: 22px;
+}
+
+.service-btn {
+    font-size: 20px;
+    padding: 15px 30px;
+    color: white;
+    border: #f3f3f3;
+    background: var(--yellow);
+    border-radius: 6%;
+    transition: 0.5s;
+}
+
+.service-btn:hover {
+
+    background: var(--nav-bar);
+}
+
+/* Title-section Start */
+.title-section {
+    background: var(--yellow);
+    text-align: center;
+    color: white;
+}
+
+.heading {
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+}
+
+.heading p {
+    font-size: 24px;
+}
+
+.heading h2 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.details h3 {
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.details p {
+    font-size: 20px;
+
+}
+
+/*  Animal Lovers - section 2*/
+.ani-lovers {
+    margin: 0px 20px;
+}
+
+
+.ani-lovers h1 {
+    font-size: 44px;
+    font-weight: 600;
+}
+
+.ani-lovers p {
+    font-size: 22px;
+}
+
+.ani-lovers {
+    width: 90%;
+    text-align: end;
+}
+
+/* Title section - 2 Start Here */
+.details del {
+    margin-right: 40px;
+}
+
+.title-btn {
+    font-weight: 600;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 12px 60px;
+    margin-right: 0px;
+    transition: 0.7s;
+
+}
+
+.title-btn:hover {
+    background-color: white;
+    color: black;
+
+}
+
+.title-child {
+    margin-bottom: 20px;
+}
+
+/* vetcare-team Start */
+
+.vetcare-team {
+    text-align: center;
+}
+
+.doctor-icons {
+    display: flex;
+    justify-content: center;
+}
+
+#doctor-icon i {
+    margin: 0px 6px;
+    background: var(--yellow);
+    border-radius: 50%;
+    padding: 8px 10px;
+    color: white;
+    transition: 0.7s;
+}
+
+#doctor-icon i:hover {
+    cursor: pointer;
+    background: var(--nav-bar);
+}
+
+/* happy-client-section-start */
+.happy-client {
+    background: url(../image/happy-client-img.png);
+    width: 100%;
+    min-height: 400px;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.happy-clients {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #eaae00ad;
+
+}
+
+.client-btn {
+    font-size: 100px;
+}
+
+.client-p {
+    font-size: 34px;
+}
+
+.client-h3 {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+
+/* Recent-post Section */
+.post-section {
+    margin-bottom: 20px;
+}
+
+.post-section span {
+    color: #00c0cb;
+}
+
+.post-section span a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #00c0cb;
+    transition: 0.7s;
+}
+
+.post-section span a:hover {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+/* Footer Start */
+
+#icon {
+    width: 28px;
+    color: black;
+    background-color: white;
+    height: 28px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+#icon:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: var(--main-black);
+
+}
+
+.footer-li {
+    list-style: none;
+    padding: 0px;
+}
+
+.footer {
+    background-color: var(--black);
+    color: white;
+}
+
+.footer-li a {
+    text-decoration: none;
+    color: rgb(162, 162, 162);
+    font-size: 26px;
+    transition: 0.7s;
+}
+
+.footer-li a:hover {
+    text-decoration: underline;
+    color: white;
+
+}
+
+.footer h5 {
+    font-weight: bold;
+    font-size: 30px
+}
+
+.footer-info {
+    margin-bottom: 20px;
+}
+
+
+.footer-infos {
+    text-align: end;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 26px;
+    align-items: end;
+}
+
+.footer-btn {
+    width: 50%;
+}
